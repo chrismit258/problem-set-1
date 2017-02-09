@@ -56,7 +56,7 @@ echo "answer-5: $answer_5"
 
 answer_6=$(head -n2 $samples \
     | grep -v '^>' \
-    | tr -d [\n] \
+    | tr -d '\n' \
     | wc -c)
 
 echo "answer-6: $answer_6"
